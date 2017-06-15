@@ -1,0 +1,2 @@
+# panelssh
+copia panel ssh
