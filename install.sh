@@ -16,8 +16,8 @@ mysql -h localhost -u root -proot -e "CREATE DATABASE ssh"
 php -m |grep ssh2
 service apache2 restart
 cd /var/www/html
-wget http://cloudinternetbeta.com.br/painel/painel4ssh.zip
+wget https://github.com/0613561761za/panelssh/raw/master/Panel4.zip
 apt-get install unzip -y
-unzip painel4ssh.zip
-rm painel4ssh.zip index.html
+unzip Panel4.zip
+rm Panel4.zip index.html
 clear
