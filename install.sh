@@ -12,11 +12,10 @@ php5enmod mcrypt
 service apache2 restart
 ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
 apt-get install libssh2-1-dev libssh2-php -y
-mysql -h localhost -u root -proot -e "CREATE DATABASE ssh"
+mysql -h localhost -u root -p -e "CREATE DATABASE ssh"
 php -m |grep ssh2
 service apache2 restart
 cd /var/www/html
-wget https://github.com/PAR4NA/painel3.0/raw/master/painelssh.zip
-apt-get install unzip -y
-unzip painelssh.zip
-rm painel4ssh.zip index.html
+apt-get install git -y
+git clone https://github.com/0613561761za/Dw-PanelSSH.git
+rm index.html
