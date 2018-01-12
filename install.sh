@@ -12,7 +12,7 @@ php5enmod mcrypt
 service apache2 restart
 ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
 apt-get install libssh2-1-dev libssh2-php -y
-mysql -h localhost -u root -proot -e "CREATE DATABASE ssh"
+mysql -u root -p -e "CREATE DATABASE ssh"
 php -m |grep ssh2
 service apache2 restart
 cd /var/www/html
