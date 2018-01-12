@@ -12,12 +12,12 @@ php5enmod mcrypt
 service apache2 restart
 ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
 apt-get install libssh2-1-dev libssh2-php -y
-mysql -u root -p -e "CREATE DATABASE ssh"
+mysql -u root -p -e "CREATE DATABASE panelssh"
 php -m |grep ssh2
 service apache2 restart
 cd /var/www/html
-wget https://github.com/0613561761za/panelssh/raw/master/Panel4.zip
+wget https://github.com/0613561761za/panelssh/raw/master/chayanin11.zip
 apt-get install unzip -y
-unzip Panel4.zip
-rm Panel4.zip index.html
+unzip chayanin11.zip
+rm chayanin11.zip index.html
 clear
